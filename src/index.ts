@@ -38,5 +38,5 @@ app.event('app_mention', async ({ say, event }) => {
 
 (async () => {
   await app.start();
-  console.log('ChatGPT talk bot is running!')
+  console.log('ChatGPT bot is running!')
 })();
