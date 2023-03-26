@@ -33,7 +33,6 @@ app.event('app_mention', async ({ say, event, client }) => {
     }
 
     const res = await openai.createChatCompletion(request);
-    console.log(res.data.choices)
     await say({ text: res.data.choices[0].message?.content, thread_ts: ts });
   }
 });
