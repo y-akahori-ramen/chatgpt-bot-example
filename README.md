@@ -1,5 +1,5 @@
 # chatgpt-bot-example
-This is an example of creating a SlackBot using ChatGPT.
+This is an example of creating a ChatGPT SlackBot.
 
 # Usage
 1. Create a SlackApp based on slackAppManifest.yml.
