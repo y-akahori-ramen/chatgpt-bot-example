@@ -55,5 +55,12 @@ app.event('app_mention', async ({ say, event, client }) => {
 (async () => {
     await app.start();
     console.log('ChatGPT bot is running!');
+    const stop = () => {
+        console.log('Stopping bot...');
+        app.stop();
+        console.log('Stopped.');
+    };
+    process.on('SIGTERM', stop);
+    process.on('SIGINT', stop);
 })();
 //# sourceMappingURL=index.js.map
