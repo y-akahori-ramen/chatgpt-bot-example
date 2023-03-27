@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SLACK_SIGNING_SECRET=${SLACK_SIGNING_SECRET}
+      - SLACK_BOT_USER_OAUTH_TOKEN=${SLACK_BOT_USER_OAUTH_TOKEN}
+      - SLACK_APP_TOKEN=${SLACK_APP_TOKEN}
